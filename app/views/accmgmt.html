@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      .jumbotron {
+        width: 85%;
+        margin: 10% auto;
+        background-color: black;
+        color: white;
+        ;
+      }
+
+      .btn {
+        margin-bottom: 10px;
+      }
+
+      .changePwd .changeEmail {
+        float: left;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h2>Account Management</h2><br>
+
+        <div class="row">
+          <div class="pwdChange col-lg-6">
+            <form>
+            <div class="text-left">
+              <label>Change Password:</label>
+            </div>
+
+            <div class="form-group">
+              <input id="oldPwd" class="form-control" type="password" placeholder="Old Password" required>
+            </div>
+
+            <div class="form-group">
+              <input id="newPwd" class="form-control" type="password" placeholder="New Password" required>
+            </div>
+
+            <div class="form-group">
+              <input id="confirmNewPwd" class="form-control" type="password" placeholder="Confirm new Password" required>
+            </div>
+
+            <div class="text-right">
+              <button type="submit" class="btn btn-secondary">Change Password</button>
+            </div>
+            </form>
+          </div>
+
+
+          <div class="emailChange col-lg-6">
+            <form>
+              <div class="text-left">
+                <label>Change Email:</label>
+              </div>
+
+              <div class="form-group">
+                <input id="oldEmail" class="form-control" type="email" placeholder="Old Email" required>
+              </div>
+
+              <div class="form-group">
+                <input id="newPwd" class="form-control" type="email" placeholder="New Email" required>
+              </div>
+
+              <div class="form-group">
+                <input id="confirmNewPwd" class="form-control" type="email" placeholder="Confirm new Email" required>
+              </div>
+
+              <div class="text-right">
+                <button type="submit" class="btn btn-secondary">Change Email</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
